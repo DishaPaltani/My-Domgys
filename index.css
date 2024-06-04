@@ -7,6 +7,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+   
     padding: 10px 20px;
     background-color: black;
     position: sticky;
@@ -18,13 +19,16 @@ header {
 .navigation > ul {
     display: flex;
     gap: 50px;
+   
+    margin-right: 50px;
 }
 .navigation > ul > li {
     list-style: none;
+   
 }
 .navigation > ul > li > a {
     color: white;
-    font-size: large;
+    font-size: 15px;
     font-weight: bold;
     font-family: sans-serif;
     text-decoration: none;
