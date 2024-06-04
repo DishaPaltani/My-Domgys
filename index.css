@@ -1,0 +1,375 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header nav bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.navigation > ul {
+    display: flex;
+    gap: 50px;
+}
+.navigation > ul > li {
+    list-style: none;
+}
+.navigation > ul > li > a {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.navigation > ul > li > a:hover {
+   padding: 25px 10px;
+   background-color:  #C4B841;
+  
+}
+.navigation .crumb {
+    position: relative;
+}
+.navigation .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    min-width: 200px; 
+    padding: 0; 
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+.navigation .sub-menu li {
+    list-style: none;
+}
+.navigation .sub-menu li a:hover {
+    background-color: #C4B841;
+    padding: 20px 10px;
+}
+.navigation .sub-menu a {
+    color: #333; 
+    font-size: medium; 
+    font-weight: normal; 
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.navigation .crumb:hover .sub-menu {
+    display: block;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.active, link:hover{
+    padding: 25px 10px;
+    background-color:  #C4B841;
+  
+
+}
+
+
+/* 
+<!-- below navbar banner background and text --> */
+.image-container {
+    width: 100%;
+    overflow: hidden; 
+}
+
+/* Make the image responsive */
+.image-container img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+}
+/* Choose your plan */
+.plan-card {
+    height: auto;
+    width: 300px;
+    border: 1px solid #C4B841;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; 
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px); /* Reduced the hover effect */
+}
+
+.prime-heading {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #C4B841;
+    padding: 10px;
+    color: white;
+   
+}
+
+.cut-price,
+.price,
+.text {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0; 
+    color: #6e6e6e;
+   
+}
+.cut-price{
+    text-decoration: line-through;
+    color: #6e6e6e;
+
+}
+
+.contact-btn {
+    width: 100%;
+    height: 40px; 
+    font-family: sans-serif;
+    padding: 0; 
+    background-color: #C4B841;
+    border: none;
+    color: white;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 20px;
+}
+
+.contact-btn:hover {
+    background-color: #a89c32; 
+}
+hr{
+    color: rgb(221, 220, 220);
+}
+
+/* 
+features */
+.grid-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+  }
+  
+  .box {
+    height: 300px;
+    width: 400px;
+    background-color: lightblue;
+    animation: slide 2s infinite alternate;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+ .service{
+    color: white;
+    margin-left: 170px;
+    margin-top: 50px;
+    font-size: 50px
+ }
+ .email{
+    color: white;
+    margin-left: 170px;
+    margin-top: 50px;
+    font-size: 50px
+
+ }
+ .performance{
+    color: white;
+    margin-left: 170px;
+    margin-top: 50px;
+    font-size: 50px
+ }
+
+ .features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    color: #6e6e6e;
+ }
+ .feature-box{
+    border: 1px solid ;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    border-bottom: 5px solid #C4B841;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+ }
+ .feature-box:hover{
+    transform: scale(1.02);
+ }
+ .fa-database{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+
+ }
+ .fa-hard-drive{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+
+ }
+ .fa-bars-progress{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+ }
+ .fa-laptop{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+
+ }
+ .fa-headphones{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+
+ }
+ .fa-gear{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #C4B841;
+
+ }
+
+ /* constact */
+
+ .contact{
+    background-color: #a89c32;
+    height: 100px;
+ }
+  
+
+/* Footer */
+
+footer{
+    height: 500px;
+    background-color:black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    
+}
+footer>div>img{
+  margin-top: 100px;
+}
+footer>div>h1{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+
+}
+footer>div>i{
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+    
+    
+}
+footer>div>i:hover{
+    color: #a89c32;
+    
+}
+footer>div>ul>li{
+    color: white;
+    list-style: none;
+    font-family: sans-serif;
+   
+}
+footer>div>ul>li:hover{
+    color: #a89c32;
+    cursor: pointer;
+    transform: translateX(10px);
+   
+   
+}
+footer>div>ul{
+    margin-top: 100px;
+    line-height: 30px;
+}
+.fa-arrow-right{
+    color: #a89c32;
+}
+
+/* 
+FAQ */
+
+.layout {
+    width: 600px;
+    margin: auto;
+}
+ 
+.accordion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background:  #a89c32;
+    border-radius: 10px;
+}
+ 
+.accordion__question p {
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+ 
+.accordion__answer p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background:  #5e5d5b;
+    border-radius: 10px;
+}
+ 
+.accordion:hover {
+    cursor: pointer;
+}
+ 
+.accordion__answer {
+    display: none;
+}
+ 
+.accordion.active .accordion__answer {
+    display: block;
+}
